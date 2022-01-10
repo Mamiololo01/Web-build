@@ -1,0 +1,135 @@
+/*=================Basic property starts=============================*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+/*=================Basic property Ends=============================*/
+
+/*=================Navigation starts=============================*/
+.navbar{
+    padding: 22px 0px;
+    background-color: #34495e !important;
+    border-bottom: none;
+}
+
+.navbar ul li a{
+    color: white !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 580px;
+    font-size: 13px;
+    transition: all 0.5s ease-in;
+}
+
+.navbar ul li a:hover{
+    color: darkgoldenrod !important;
+}
+
+.navbar-toggle{
+    border: 1px solid white !important;
+    transition: all 0.5s ease-in;
+}
+.navbar-toggle:hover{
+    background-color: tomato !important;
+}
+
+.navbar-inverse .navbar-collapse{
+    border-color: transparent !important;
+}
+
+.contact{
+    border: 1px solid white;
+    border-radius: 50px;
+}
+
+.navbar-inverse{
+    background-color: transparent !important;
+}
+
+/*=================Navigation Ends=============================*/
+
+/*=================Slider starts=============================*/
+.slider {
+    width: 100%;
+    height: 750px;
+    background-image: url(./img/L4img4.jpeg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.slider-overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(red, green, blue, alpha);
+    position: relative;
+}
+
+.slider-content{
+    position: absolute;
+    width: 100%;
+    top: 39%;
+}
+
+.icon .fa{
+    font-size: 35px;
+    margin-right: 10px;
+}
+
+.cta-div{
+    margin-top: 30px;
+}
+
+.btn1{
+    padding: 13px 18px;
+    background-color: transparent;
+    color:white;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: 15px;
+    border: 2px solid white;
+    border-top-left-radius: 15px;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn1:hover{
+    text-decoration: none;
+    color: white;
+    background-color: turquoise;
+}
+
+
+.btn2{
+    padding: 13px 18px;
+    background-color: transparent;
+    color:white;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: 15px;
+    border: 2px solid white;
+}
+
+.btn2:hover{
+    text-decoration: none;
+    color: white;
+    background-color: turquoise;
+}
+
+.social-networks a.fa{
+    border: 1px solid white;
+    padding: 10px;
+    width: 35px;
+    height: 35px;
+    color: white;
+    border-radius: 25px;
+    margin-right: 2px;
+    transition: all 0.5s ease-in;
+}
+
+.social-networks a.fa:hover{
+    text-decoration: none;
+    background-color: turquoise;
+    color: white;
+}
+
