@@ -2,11 +2,17 @@
 @import url('https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
 
 body {
     margin: 0;
     padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+
 
 * {
     box-sizing: border-box;
@@ -57,7 +63,7 @@ header .nav{
     padding: 100px 0px 15px;
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
-    -webkit-transition: transform .5 ease;
+    -webkit-transition: transform .5s ease;
     transition: transform .5s ease;
 }
 
@@ -74,6 +80,7 @@ header .nav ul{
 
 header .nav ul li{
     display: block;  
+    
 }
 
 header .nav ul li a{
@@ -84,6 +91,20 @@ header .nav ul li a{
     display: block;
     position: relative;
     padding: 0px 30px;
+}
+
+header .nav ul li a.active::before{
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    opacity: .5;
+    -webkit-transition: width 0.5s ease;
+    transition: width 0.5s ease;
+    z-index: -1;
 }
 
 header .nav ul li a::before{
@@ -203,7 +224,25 @@ header .ham-burger.active span:nth-child(2){
 }
 
 .home h1 span{
-    color: red;
+    color: burlywood;
+}
+
+@media(max-width: 700px) {
+    .home h1{
+        color: white;
+        font-size: 30px;
+        font-weight: 150;
+        text-transform: uppercase;
+        margin: 0;
+}
+.home{
+    height: 60vh;
+    background-image: url(../images/fitimg2.jpeg);
+    background-size:cover;
+    padding: 10px;
+    display: flex;
+}
+
 }
 
 
@@ -211,7 +250,7 @@ header .ham-burger.active span:nth-child(2){
 
 .about{
       padding: 80px 15px;
-      background-color: #ffffff;
+      background-color: burlywood;
  }
 
  .about .content{
@@ -233,15 +272,15 @@ header .ham-burger.active span:nth-child(2){
  }
 
  .about .content .box .inner .text{
-     padding: 30px;
+     padding: 20px 15px;
  }
 
  .about .content .box .inner .text h4{
      font-size: 18px;
-     text-decoration: center;
+     text-align: center;
      margin: 0;
      padding: 0px 0px 15px;
-     font-weight: 400px;
+     font-weight: 500px;
      color: white;
      text-transform: uppercase;
  }
@@ -253,18 +292,38 @@ header .ham-burger.active span:nth-child(2){
      color: white;
      text-align: center;
      margin: 0;
-     font-weight: 300px;
      font-family: 'open sans', sans-serif;
 
  }
 
  .about .content .box:nth-child(2) .inner{
-     background-color: #c11325;
+     background-color: rosybrown;
  }
+
+ .about .content .box:nth-child(1) .inner{
+    background-color: black;
+    
+}
 
  .about .content .box .inner .img img{
      width: 100%;
  }
+
+ @media(max-width: 700px) {
+    .about .content .box .inner .text p{
+        letter-spacing: 1px;
+        font-size: 10px;
+        line-height: 10px;
+ }
+
+ .about .content .box{
+    flex: 0 0 66.66%;
+    max-width: 66.66%;
+    padding: 10px;
+
+}
+
+}
 
 
 
@@ -272,7 +331,7 @@ header .ham-burger.active span:nth-child(2){
 
  .service{
      padding: 80px 0px;
-     background-color: red;
+     background-color: powderblue;
  }
 
  .service .content{
@@ -321,7 +380,7 @@ header .ham-burger.active span:nth-child(2){
 
 .service .content .text .btn:hover{
     border: 1px solid #222222;
-    color: turquoise;
+    color: rebeccapurple;
     background-color: transparent;
 }
 
@@ -338,8 +397,8 @@ header .ham-burger.active span:nth-child(2){
 
 .service .content .accordian-container .head .fa{
     position: absolute;
-    right: 0px;
-    top: 13px;
+    right: 15px;
+    top: 5px;
     color: white;
     height: 30px;
     width: 30px;
@@ -348,6 +407,7 @@ header .ham-burger.active span:nth-child(2){
     line-height: 30px;
     color: #ffffff;
     border-radius: 50%;
+    border: 1px solid burlywood;
     
 }
 .service .content .accordian-container .head h4{
@@ -360,6 +420,26 @@ header .ham-burger.active span:nth-child(2){
      text-transform: capitalize;
      text-align: center;
 
+}
+
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    background-color: slateblue;
+    color: #fff;
+    border: 1px solid black;
+    padding: 12px 34px;
+    font-size: 13px;
+    position: relative;
+    cursor: pointer;
+    
+    
+}
+
+.btn:hover{
+    transition: all 0.5s ease-in;
+    border: 1px solid yellowgreen;
+    background: #f44336;
 }
 
 .service .content .accordian-container.active .head{
@@ -391,11 +471,29 @@ header .ham-burger.active span:nth-child(2){
 
 }
 
+@media(max-width: 700px) {
+    .service .content .text h2{
+        font-size: 18px;
+        font-weight: 300;
+        padding: 0px 0px 18px;
+}
+.service .content .accordian-container .body{
+    padding: 10px;
+}
+service .content .accordian-container .head h4{
+    font-size: 10px;
+     margin: 0;
+     padding: 0;
+     font-weight: 200;
+}
+
+}
+
 
 
 .classes{
     padding:90px 0px 50px;
-    background-color: mintcream;
+    background-color: olive;
 
 }
 
@@ -421,7 +519,7 @@ header .ham-burger.active span:nth-child(2){
     font-size: 18px;
     text-decoration: center;
     margin: 0;
-    padding: 0;
+    padding: 0 0 20px;
     font-weight: 400;
     color: white;
     text-transform: capitalize;
@@ -448,6 +546,10 @@ header .ham-burger.active span:nth-child(2){
 
 .classes .content .class-items .item:nth-child(2){
     background-color: #c11325;
+}
+
+.classes .content .class-items .item:nth-child(3){
+    background-color: indigo;
 }
 
 .classes .content .class-items .item .item-text{
@@ -506,7 +608,8 @@ header .ham-burger.active span:nth-child(2){
 /*Schedule section*/
 
 .schedule{
-    padding: 8px 0;
+    padding: 80px 0;
+    background-color: lightblue;
 
 }
 
@@ -535,7 +638,7 @@ header .ham-burger.active span:nth-child(2){
     color: #ffffff;
     text-align: left;
     margin: 0;
-    padding: 0 0 10px;
+    padding: 0 0 20px;
     font-family: 'Times New Roman', Times, serif;
 
 }
@@ -554,7 +657,7 @@ header .ham-burger.active span:nth-child(2){
 
 
 .schedule .content .timing .table td{
-    border: 1px solid #c11325;
+    border: 1px solid black;
     padding: 8px;
     font-size: 15px;
     text-align: center;
@@ -566,7 +669,7 @@ header .ham-burger.active span:nth-child(2){
     color: #ffffff;
 }
 
-.schedule .content .timing .table tr:nth-child(even) td.day{
+.schedule .content .timing .table tr:nth-child(odd) td.day{
     background-color: royalblue;
     color: azure;
 }
@@ -600,9 +703,9 @@ header .ham-burger.active span:nth-child(2){
 }
 
 .gallery h2{
-    font-size: 30px;
+    font-size: 50px;
     font-weight: 500;
-    color: #ffffff;
+    color: black;
     padding: 0px 0px 20px;
     text-align: center;
 }
@@ -612,7 +715,7 @@ header .ham-burger.active span:nth-child(2){
 
 .contact {
     padding: 80px 0px;
-    background-color:coral;
+    background-color:rosybrown;
 
 }
 
@@ -636,12 +739,12 @@ header .ham-burger.active span:nth-child(2){
     background-color: transparent;
     border: 1px solid #ffffff;
     letter-spacing: 1px;
-    color: #ffffff;
+    color: white;
 }
 
 contact .content .form input::placeholder
 .contact .content .form textarea::placeholder{
-    color: #ffffff;
+    color: white;
 
 }
 
@@ -710,7 +813,7 @@ contact .content .form input::placeholder
     position: absolute;
     left: 0px;
     top: 5px;
-    color: red;
+    color:yellowgreen;
 }
 
 .contact .content .text .social{
@@ -735,13 +838,13 @@ contact .content .form input::placeholder
     border-color: #ffffff;
 }
 .contact .content .text .social a span{
-    color: #222222;
+    color: white;
     font-size: 15px;
 }
 
 .contact .content .text .copy{
-    color: #c5c5c5;
-    border-top: 1px solid #333333;
+    color: black;
+    border-top: 1px solid whitesmoke;
     margin-top: 30px;
     padding-top: 20px;
     font-size: 15px;
