@@ -133,3 +133,226 @@
     color: white;
 }
 
+
+
+
+/*=================Services starts=============================*/
+
+.service-area {
+    margin-top: 30px;
+}
+
+.service-area p {
+    margin-bottom: -5px;
+}
+
+.service-wrap {
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    overflow: hidden;
+    padding: 25px 35px;
+    position: relative;
+    transition: all 0.5s ease 0s;
+    z-index: 9;
+    margin-top: 20px;
+}
+
+.service-wrap::before, .service-wrap::after {
+    content: "";
+    height: 300%;
+    position: absolute;
+    transform: rotate(45deg);
+    width: 120%;
+    z-index: -9;
+    transition: all 0.5s;
+    opacity: 0;
+    background: #34495e;
+}
+
+.service-wrap::before {
+    top: -37px;
+    left: 100%;
+}
+
+.service-wrap:hover:before {
+    left: -27px;
+    opacity: 1;
+}
+
+.service-wrap::after {
+    right: 100%;
+    bottom: -37px;
+}
+
+.service-wrap:hover:after {
+    right: -27px;
+    opacity: 1;
+}
+
+.service-wrap:hover {
+    color: aqua;
+}
+
+.service-wrap h3{
+    color: aqua;
+    font-size: 25px;
+    font-weight: 700;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.service-wrap p {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.service-wrap:hover h3 {
+    color: white;
+
+}
+
+.service-wrap:hover h3:after {
+    background-color: beige;
+}
+
+.service-icon i {
+    font-size: 30px;
+    margin-bottom: 20px;
+    transition: all 0.5s;
+}
+
+.service-wrap:hover .service-icon i {
+    transform: rotate(360deg);
+}
+
+/*=================Services Ends=============================*/
+
+/*=================Start FAQ=============================*/
+
+#accordian .panel {
+    box-shadow: none;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+#accordian .panel-heading {
+    padding: 0;
+    border: none;
+    border-radius: 10px;
+
+}
+
+#accordian .panel-title a {
+    display: block;
+    padding: 25px 35px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    border: none;
+    position: relative;
+    background: #34495e;
+    transition: all 0.3s ease 0s;
+}
+
+#accordian .panel-title a:after,
+#accordian .panel-title a.collapsed:after {
+    content: "\f068";
+    font-family: fontawesome;
+    width: 40px;
+    height: 40px;
+    line-height: 32px;
+    border-radius: 50%;
+    background: darkgray;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    border: 5px solid;
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    transition: all 0.3s ease 0s;
+}
+
+#accordian .panel-title a.collapsed:after {
+    content: "\f067";
+}
+
+#accordian .panel-title a:hover:after,
+#accordian .panel-title a.collapsed:hover:after {
+    transform: rotate(360deg);
+}
+
+#accordian .panel-body {
+    padding: 15px 25px;
+    background: lightcoral;
+    font-size: 13px;
+    color: red;
+    line-height: 25px;
+    border-top: none;
+    position: relative;
+}
+
+.panel-heading a{
+    text-decoration: none !important;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.faqimage img{
+    margin-top: -45px;
+
+}
+/*=================End FAQ=============================*/
+
+
+/*=================Start Video=============================*/
+.video-area {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(./img/L4img3.jpeg);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    overflow: hidden;
+    margin-top: 40px;
+    background-attachment: fixed;
+}
+
+.play {
+    background: #fff url(./img/play.jpeg) no-repeat 60% 50%;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    box-shadow: 0px 0px 0px 20px darkkhaki;
+    -webkit-box-shadow: 0px 0px 0px 20px darkkhaki;
+    -moz-box-shadow: 0px 0px 0px 20px darkkhaki;
+    -ms-box-shadow: 0px 0px 0px 20px darkkhaki;
+    -o-box-shadow: 0px 0px 0px 20px darkkhaki;
+    transition: all 0.4s ease-in;
+    -webkit-transition: all 0.4s ease-in;
+    -moz-transition: all 0.4s ease-in;
+    -ms-transition: all 0.4s ease-in;
+    -o-transition: all 0.4s ease-in;
+
+}
+
+.play:hover {
+    box-shadow: 0px 0px 15px 20px goldenrod;
+}
+
+.video-container {
+    height: 0;
+    overflow: hidden;
+    position: relative;
+    margin-top: -130px;
+    display: none;
+    padding-top: 30px;
+    padding-bottom: 47%;
+
+}
+
+/*=================End Video=============================*/
