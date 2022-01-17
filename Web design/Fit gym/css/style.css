@@ -249,8 +249,8 @@ header .ham-burger.active span:nth-child(2){
   /*About section */
 
 .about{
-      padding: 80px 15px;
-      background-color: burlywood;
+      padding: 80px 10px;
+      background-color: lightsteelblue;
  }
 
  .about .content{
@@ -297,7 +297,7 @@ header .ham-burger.active span:nth-child(2){
  }
 
  .about .content .box:nth-child(2) .inner{
-     background-color: rosybrown;
+     background-color: lightcoral;
  }
 
  .about .content .box:nth-child(1) .inner{
@@ -307,6 +307,7 @@ header .ham-burger.active span:nth-child(2){
 
  .about .content .box .inner .img img{
      width: 100%;
+     height: 100%;
  }
 
  @media(max-width: 700px) {
@@ -510,6 +511,7 @@ service .content .accordian-container .head h4{
 
 .classes .content .img img{
     width: 100%;
+    height: 100%;
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
 
@@ -545,11 +547,11 @@ service .content .accordian-container .head h4{
 }
 
 .classes .content .class-items .item:nth-child(2){
-    background-color: #c11325;
+    background-color: black;
 }
 
 .classes .content .class-items .item:nth-child(3){
-    background-color: indigo;
+    background-color: black;
 }
 
 .classes .content .class-items .item .item-text{
@@ -676,6 +678,12 @@ service .content .accordian-container .head h4{
 
 /*Gallery section*/
 
+.gallery{
+    background-color: ivory;
+    padding: 80px 15px;
+
+}
+
 .gallery .content{
     display: flex;
     -webkit-display: flex;
@@ -690,6 +698,7 @@ service .content .accordian-container .head h4{
 .gallery .content .box img{
     display: block;
     width: 100%;
+    height: 100%;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     -webkit-transition: all .5s ease;
@@ -715,7 +724,7 @@ service .content .accordian-container .head h4{
 
 .contact {
     padding: 80px 0px;
-    background-color:rosybrown;
+    background-color:black;
 
 }
 
@@ -769,7 +778,7 @@ contact .content .form input::placeholder
 
 .contact .content .form button:hover{
     background-color: transparent;
-    color: #ffffff;
+    color: lightsalmon;
     border-color: #ffffff;
 }
 
@@ -806,6 +815,7 @@ contact .content .form input::placeholder
     letter-spacing: 2px;
     position: relative;
     padding-left: 30px;
+    color: white;
 }
 
 .contact .content .text .info li span{
@@ -834,7 +844,7 @@ contact .content .form input::placeholder
 }
 
 .contact .content .text .social a:hover{
-    background-color: transparent;
+    background-color: limegreen;
     border-color: #ffffff;
 }
 .contact .content .text .social a span{
