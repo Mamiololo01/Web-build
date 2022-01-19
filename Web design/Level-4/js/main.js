@@ -12,4 +12,13 @@ jQuery(document).ready(function(){
        loop: true,
    });
 
+   $(".counter").counterUp({
+    delay: 10,
+    time: 1000
+});
+  
+    $('a').smoothScroll();
+
+    new WOW().init();
+
 });

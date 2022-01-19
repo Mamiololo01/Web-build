@@ -20,15 +20,23 @@
     font-weight: 580px;
     font-size: 13px;
     transition: all 0.5s ease-in;
+    background: transparent !important;
 }
 
 .navbar ul li a:hover{
     color: darkgoldenrod !important;
+    background: none !important;
 }
 
 .navbar-toggle{
     border: 1px solid white !important;
+    color: white !important;
     transition: all 0.5s ease-in;
+}
+
+.icon-bar {
+    color: white !important;
+    background-color: whitesmoke !important;
 }
 .navbar-toggle:hover{
     background-color: tomato !important;
@@ -53,7 +61,7 @@
 .slider {
     width: 100%;
     height: 750px;
-    background-image: url(./img/L4img4.jpeg);
+    background-image: url(./img/L4img5.jpeg);
     background-size: cover;
     background-position: center;
     color: white;
@@ -300,6 +308,8 @@
 .faqimage img{
     margin-top: -45px;
 
+    
+
 }
 /*=================End FAQ=============================*/
 
@@ -352,7 +362,201 @@
     display: none;
     padding-top: 30px;
     padding-bottom: 47%;
-
 }
 
 /*=================End Video=============================*/
+
+
+/*=================Start Blog=============================*/
+.latest-news{
+    margin-top: 40px;
+}
+
+.latest-news-wrap {
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+}
+
+.news-img{
+    position: relative;
+}
+
+.news-img:before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: "";
+    opacity: 0;
+    background: #000;
+    transform: scale(0.8);
+    transition: all 0.5s;
+}
+
+.latest-news-wrap:hover .news-img:before {
+    opacity: 0.5;
+    transform: scale(1);
+}
+
+.deat {
+    background: red none repeat scroll 0 0;
+    height: 70px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 70px;
+    padding: 10px;
+}
+
+.deat span {
+    display: block;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+
+}
+
+.news-content{
+    padding: 2px;
+    margin-left: -20px;
+}
+
+.news-content i{
+    font-size: 18px;
+    display: inline-block;
+}
+
+.news-content .fa{
+    padding: 10px 10px;
+    cursor: pointer;
+    
+}
+
+.news-content .fa-facebook {
+    color: blue;
+}
+
+.news-content .fa-linkedin {
+    color: red;
+}
+
+.news-content .fa-twitter {
+    color: yellowgreen;
+}
+
+.news-content .fa-youtube {
+    color: cyan;
+}
+
+.news-content p{
+    margin-bottom: 15px;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.news-content a {
+    font-size: 14px;
+    background-color: darkcyan;
+    padding: 10px 20px;
+    color: whitesmoke;
+    transition: all 0.5s ease-in-out;
+}
+
+.news-content a:hover{
+    font-size: 14px;
+    border: 1px solid lime;
+    border-top-right-radius: 20px;
+    background-color: transparent;
+    color: tomato;
+    margin-right: 0;
+    text-decoration: none;
+}
+/*=================End Blog=============================*/
+
+
+
+/*=================Start stats count=============================*/
+.stat{
+    background-image: url(./img/L4img4.jpeg);
+    background-position: center;
+    padding-top: 180px;
+    padding-bottom: 200px;
+    color: white;
+    background-attachment: fixed;
+    margin-top: 100px;
+}
+
+.stat i{
+    font-size: 70px;
+}
+
+.stat-items h2{
+    font-weight: bolder;
+    font-size: 42px;
+    color: tomato;
+}
+
+.stat p{
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/*=================End Stats count=============================*/
+
+
+/*=================Start Contact =============================*/
+.contact-area {
+    margin-top: 60px;
+}
+
+.form-control {
+    border-radius: 0px !important;
+    border: 1px solid #34495e !important;
+}
+
+.contact-form button.btn {
+    font-size: 1.9rem;
+    font-weight: 680;
+    padding: 12px 43px;
+    border: 1px solid black;
+    border-radius: 0px;
+}
+
+.contact-infos {
+    float: left;
+    width: 100%;
+    margin-top: 90px;
+    margin-bottom: -30px;
+    background: lightskyblue;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.contact-infos .fa{
+    color: whitesmoke;
+    font-size: 25px;
+    border: 1px solid wheat;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+}
+
+.contact-infos p{
+    color: white;
+    margin-top: 15px;
+}
+/*=================End Contact=============================*/
+
+/*=================Start maps=============================*/
+.maps {
+    margin-top: 20px;
+}
+
+
+
+
+
+
+/*=================End maps=============================*/
