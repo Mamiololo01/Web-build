@@ -1,15 +1,15 @@
 jQuery(document).ready(function(){
     "use strict"
     $('.slider').ripples({
-        dropRadius: 10,
+        dropRadius: 11,
         perturbance: 0.01,
     
       });
 
    $(".text").typed({
-       strings: ["First sentence.","Second sentence."],
-       typespeed: 0,
-       loop: true,
+       strings: ["<strong>Optimal service.</strong><strong class='primary'>","delivery with Level-4."],
+       typespeed:0,
+       loop:true,
    });
 
    $(".counter").counterUp({
@@ -17,7 +17,7 @@ jQuery(document).ready(function(){
     time: 1000
 });
   
-    $('a').smoothScroll();
+     $('a').smoothScroll();
 
     new WOW().init();
 

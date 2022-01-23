@@ -8,23 +8,24 @@
 
 /*=================Navigation starts=============================*/
 .navbar{
-    padding: 22px 0px;
-    background-color: #34495e !important;
-    border-bottom: none;
+    padding: 24px 0px;
+    border-bottom: none !important;
+    transition: all 0.5s ease-in-out;
+    
 }
 
 .navbar ul li a{
     color: white !important;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 580px;
+    letter-spacing: 2px;
+    font-weight: 650px;
     font-size: 13px;
     transition: all 0.5s ease-in;
-    background: transparent !important;
+    background: transparent;
 }
 
-.navbar ul li a:hover{
-    color: darkgoldenrod !important;
+.navbar ul li a:hover, .navbar ul li a:focus{
+    color: rgb(11, 158, 184) !important;
     background: none !important;
 }
 
@@ -61,7 +62,7 @@
 .slider {
     width: 100%;
     height: 750px;
-    background-image: url(./img/L4img5.jpeg);
+    background-image: url(./img/L4img11.jpeg);
     background-size: cover;
     background-position: center;
     color: white;
@@ -80,7 +81,7 @@
     top: 39%;
 }
 
-.icon .fa{
+.icons .fa{
     font-size: 35px;
     margin-right: 10px;
 }
@@ -116,6 +117,8 @@
     letter-spacing: 1px;
     font-size: 15px;
     border: 2px solid white;
+    margin-right: 10px;
+    border-top-right-radius: 15px;
 }
 
 .btn2:hover{
@@ -141,6 +144,85 @@
     color: white;
 }
 
+.slider .text, .slider .typed-cursor{
+    display: inline;
+    font-size: 50px;
+    text-transform: uppercase;
+
+}
+
+.primary {
+    color: orangered;
+}
+
+.typed-cursor {
+    opacity: 1;
+    animation: blink 0.7s infinite;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/*=================Start About=============================*/
+.about-us{
+    margin-top: 30px;
+    background-image: url(./img/L4img3.jpeg);
+    background-size: cover;
+    background-color: aqua;
+}
+
+.about-us h2{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.about-us p{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*=================End About=============================*/
+
+
 
 
 
@@ -148,6 +230,7 @@
 
 .service-area {
     margin-top: 30px;
+    background-color: lightskyblue;
 }
 
 .service-area p {
@@ -236,6 +319,10 @@
 
 /*=================Start FAQ=============================*/
 
+.faq{
+    background-color: lightsteelblue;
+}
+
 #accordian .panel {
     box-shadow: none;
     border: none;
@@ -291,9 +378,9 @@
 
 #accordian .panel-body {
     padding: 15px 25px;
-    background: lightcoral;
+    background: whitesmoke;
     font-size: 13px;
-    color: red;
+    color: black;
     line-height: 25px;
     border-top: none;
     position: relative;
@@ -301,14 +388,13 @@
 
 .panel-heading a{
     text-decoration: none !important;
-    font-size: 15px;
+    font-size: 15px !important;
     font-weight: normal;
 }
 
 .faqimage img{
-    margin-top: -45px;
-
-    
+    margin-top: -10px;
+    padding-right: 20px;
 
 }
 /*=================End FAQ=============================*/
@@ -316,9 +402,9 @@
 
 /*=================Start Video=============================*/
 .video-area {
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(./img/L4img3.jpeg);
-    padding-top: 100px;
-    padding-bottom: 100px;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(./img/L4img2.jpeg);
+    padding-top: 180px;
+    padding-bottom: 180px;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -330,28 +416,31 @@
 }
 
 .play {
-    background: #fff url(./img/play.jpeg) no-repeat 60% 50%;
+    background: #fff url(./img/playbutton.png) no-repeat 60% 50%;
     width: 110px;
     height: 110px;
     border-radius: 50%;
     display: inline-block;
     margin-top: 70px;
     margin-bottom: 40px;
-    box-shadow: 0px 0px 0px 20px darkkhaki;
-    -webkit-box-shadow: 0px 0px 0px 20px darkkhaki;
-    -moz-box-shadow: 0px 0px 0px 20px darkkhaki;
-    -ms-box-shadow: 0px 0px 0px 20px darkkhaki;
-    -o-box-shadow: 0px 0px 0px 20px darkkhaki;
+    box-shadow: 0px 0px 0px 20px lightskyblue;
+    -webkit-box-shadow: 0px 0px 0px 20px lightskyblue;
+    -moz-box-shadow: 0px 0px 0px 20px lightskyblue;
+    -ms-box-shadow: 0px 0px 0px 20px lightskyblue;
+    -o-box-shadow: 0px 0px 0px 20px lightskyblue;
     transition: all 0.4s ease-in;
-    -webkit-transition: all 0.4s ease-in;
-    -moz-transition: all 0.4s ease-in;
-    -ms-transition: all 0.4s ease-in;
-    -o-transition: all 0.4s ease-in;
+    -webkit-transition: all .4s ease-in;
+    -moz-transition: all .4s ease-in;
+    -ms-transition: all .4s ease-in;
+    -o-transition: all .4s ease-in;
 
 }
 
 .play:hover {
-    box-shadow: 0px 0px 15px 20px goldenrod;
+    box-shadow: 0px 0px 15px 20px lightyellow;
+    -webkit-box-shadow: 0px 0px 15px 20px lightyellow;
+    -moz-box-shadow: 0px 0px 15px 20px lightyellow;
+    -o-box-shadow: 0px 0px 15px 20px lightyellow;
 }
 
 .video-container {
@@ -361,7 +450,7 @@
     margin-top: -130px;
     display: none;
     padding-top: 30px;
-    padding-bottom: 47%;
+    padding-bottom: 54.25%;
 }
 
 /*=================End Video=============================*/
@@ -370,6 +459,7 @@
 /*=================Start Blog=============================*/
 .latest-news{
     margin-top: 40px;
+    background-color: lightsteelblue;
 }
 
 .latest-news-wrap {
@@ -400,26 +490,26 @@
 
 .deat {
     background: red none repeat scroll 0 0;
-    height: 70px;
+    height: 50px;
     left: 0;
     position: absolute;
     text-align: center;
     top: 0;
-    width: 70px;
+    width: 50px;
     padding: 10px;
 }
 
 .deat span {
     display: block;
     color: white;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 16px;
 
 }
 
 .news-content{
     padding: 2px;
-    margin-left: -20px;
+    margin-left: -10px;
 }
 
 .news-content i{
@@ -451,7 +541,7 @@
 
 .news-content p{
     margin-bottom: 15px;
-    text-align: justify;
+    text-align:left;
     margin-top: 20px;
 }
 
@@ -508,6 +598,7 @@
 /*=================Start Contact =============================*/
 .contact-area {
     margin-top: 60px;
+    background-color: linen;
 }
 
 .form-control {
@@ -549,14 +640,51 @@
 }
 /*=================End Contact=============================*/
 
+
+
+
 /*=================Start maps=============================*/
 .maps {
     margin-top: 20px;
 }
-
-
-
-
-
-
 /*=================End maps=============================*/
+
+
+
+
+/*=================Start Footer =============================*/
+.footer {
+    background-color: black;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-attachment: fixed;
+}
+
+.social-icon a{
+    margin: 0 8px 10px 8px;
+    display: inline-block;
+
+}
+.social-icon a:hover .fa{
+    transition: all 0.3s ease-in;
+    color: rebeccapurple;
+}
+
+
+
+.footer .fa{
+    font-size: 20px;
+    color: whitesmoke;
+    width: 40px;
+    height: 40px;
+}
+
+.copyright p{
+    color: whitesmoke;
+}
+
+
+/*=================End Footer=============================*/
